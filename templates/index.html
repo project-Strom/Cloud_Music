@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}主页{% endblock %}
+{% block content %}
+	{% if user.username %}
+		<h4>你好,{{ user.username }}！欢迎回来！</h4>
+	{% else %}
+		<h4>你尚未登录，只能访问公开内容！</h4>
+	{% endif %}
+{% endblock %}
+
